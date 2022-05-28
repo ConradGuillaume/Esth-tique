@@ -140,7 +140,7 @@ main h3 {
   width: 90%;
   height: 48px;
   border-radius: 15px;
-  background: url(../../images/wood.jpg) center/cover;
+  background: url("../../images/oldpaper.png") center/cover;
   margin: 5px 0px 25px 0px;
   -webkit-box-shadow: 13px 8px 13px 5px rgba(3, 3, 3, 0.75);
           box-shadow: 13px 8px 13px 5px rgba(3, 3, 3, 0.75);
