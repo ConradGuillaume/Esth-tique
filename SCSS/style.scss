@@ -1,0 +1,143 @@
+@import "./utils/variables.scss";
+@import "./utils/mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+body {
+  width: 100%;
+  margin: 0%;
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 2;
+  opacity: 2;
+  color: rgb(2, 2, 2);
+  border-top: 2px solid gray;
+  img {
+    width: 50px;
+  }
+  .logo__1 {
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  .logo__2 {
+    padding-left: 20px;
+  }
+  h1 {
+    font-family: $Fonttitle;
+    border-bottom: 5px solid rgb(150, 150, 150);
+    font-size: 35px;
+  }
+}
+main {
+  margin: 0%;
+  background-image: url(https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_960_720.jpg);
+  border-radius: 50px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  font-family: $Fontmain;
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 7px ridge #979797;
+    background: #ffffffe0;
+    border-radius: 64px 64px 64px 64px;
+    height: 20px;
+    width: 50%;
+    margin: 0%;
+    padding: 3% 0% 3% 0%;
+    font-size: 25px;
+    font-family: $Fonttitle;
+    margin-top: 3%;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font-size: 20px;
+    border-bottom: 5px dotted rgb(241, 241, 241);
+    border-top: 5px dotted white;
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background: rgba(97, 97, 97, 0.507);
+  }
+}
+.epilation {
+  margin: 0%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .epilation__bouton {
+    @include boutonmenu;
+    .epilation__acte {
+      font-size: 20px;
+      width: 70%;
+      display: flex;
+      text-align: start;
+      padding-left: 8%;
+    }
+    .epilation__prix {
+      font-size: 19px;
+      font-weight: 900;
+      padding-left: 10%;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  p {
+    font-size: 16px;
+    font-weight: 900;
+    font-family: $Fontmain;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact__mail {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .contact__telephone {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .contact__creation {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+}
+/** 
+
+
+<a href="https://www.flaticon.com/free-icons/bamboo" 
+title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/fr/icones-gratuites/lotus"
+ title="lotus icônes">Lotus icônes créées par Freepik - Flaticon</a>
+
+**/
