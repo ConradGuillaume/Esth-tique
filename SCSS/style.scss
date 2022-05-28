@@ -87,14 +87,14 @@ main {
   .epilation__bouton {
     @include boutonmenu;
     .epilation__acte {
-      font-size: 20px;
+      font-size: 16px;
       width: 70%;
       display: flex;
       text-align: start;
       padding-left: 8%;
     }
     .epilation__prix {
-      font-size: 19px;
+      font-size: 17px;
       font-weight: 900;
       padding-left: 10%;
       width: 30%;
