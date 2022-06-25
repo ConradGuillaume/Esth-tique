@@ -1,0 +1,19 @@
+@keyframes btnanim {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes deploy {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 350px;
+  }
+}
