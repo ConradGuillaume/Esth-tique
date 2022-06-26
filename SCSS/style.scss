@@ -150,6 +150,8 @@ footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-top: 4%;
+  margin-bottom: 4%;
   h1 {
     color: white;
     margin: 10px 0px 10px 0px;
@@ -209,16 +211,17 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
 
 .get-big {
   height: 320px;
+  background: #1f1f1fe1;
+  box-shadow: 0px 0px 12px 9px #000000;
   h1 {
     display: none;
   }
   .inside {
-    //display: block;
-    //margin-left: 13%;
     visibility: visible;
     height: 100%;
   }
   .soin {
     opacity: 1;
+    background: #1f1f1f;
   }
 }
