@@ -146,6 +146,7 @@ footer {
 .select_1 {
   @include button();
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -164,12 +165,13 @@ footer {
   align-items: center;
   flex-direction: column;
   background: (#1f1f1f00);
-  display: none;
+  visibility: hidden;
+  height: 0%;
 
   .soin {
     border: inset rgb(255, 255, 255);
     box-shadow: 0px 1px 5px 1px #fcfcfc;
-    margin: 4% 0% 4% 0%;
+    margin: 2% 0% 2% 0%;
     width: 85%;
     height: 50px;
     border-radius: 15px;
@@ -177,8 +179,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     opacity: 0;
-    transition: opacity 2s  ease-in;
-    transition-delay: 2s;
+    transition: 0.5s;
 
     h2 {
       margin-left: 10px;
@@ -192,17 +193,6 @@ footer {
       margin-right: 5%;
       font-size: 17px;
     }
-  }
-}
-
-@keyframes btnanim {
-  0% {
-    transform: translateY(-55px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 2;
   }
 }
 
@@ -223,8 +213,10 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
     display: none;
   }
   .inside {
-    display: block;
-    margin-left: 13%;
+    //display: block;
+    //margin-left: 13%;
+    visibility: visible;
+    height: 100%;
   }
   .soin {
     opacity: 1;
