@@ -27,24 +27,6 @@
   }
 }
 
-@-webkit-keyframes deploy {
-  from {
-    height: 50px;
-  }
-  to {
-    height: 350px;
-  }
-}
-
-@keyframes deploy {
-  from {
-    height: 50px;
-  }
-  to {
-    height: 350px;
-  }
-}
-
 body {
   width: 100%;
   margin: 0%;
@@ -277,6 +259,8 @@ footer .contact__creation {
   border-radius: 50px;
   width: 90%;
   height: 50px;
+  -webkit-transition: height 1s ease-in;
+  transition: height 1s ease-in;
   margin-top: 2%;
   margin-bottom: 2%;
   display: -webkit-box;
@@ -295,30 +279,6 @@ footer .contact__creation {
   color: white;
   margin: 10px 0px 10px 0px;
   font-size: 22px;
-}
-
-.select_1:hover {
-  background: #1f1f1fee;
-  -webkit-animation: deploy 1.5s ease-in forwards;
-          animation: deploy 1.5s ease-in forwards;
-}
-
-.select_1:hover h1 {
-  display: none;
-}
-
-.select_1:hover .inside {
-  display: block;
-}
-
-.select_1:hover .inside .soin {
-  margin-left: 29px;
-  opacity: 0;
-  -webkit-animation: btnanim 2s ease-in forwards;
-          animation: btnanim 2s ease-in forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-  background: #1f1f1f;
 }
 
 .inside {
@@ -358,6 +318,11 @@ footer .contact__creation {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 0;
+  -webkit-transition: opacity 2s  ease-in;
+  transition: opacity 2s  ease-in;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
 }
 
 .inside .soin h2 {
@@ -397,3 +362,19 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
  title="lotus icônes">Lotus icônes créées par Freepik - Flaticon</a>
 
 **/
+.get-big {
+  height: 320px;
+}
+
+.get-big h1 {
+  display: none;
+}
+
+.get-big .inside {
+  display: block;
+  margin-left: 13%;
+}
+
+.get-big .soin {
+  opacity: 1;
+}

@@ -154,23 +154,6 @@ footer {
     margin: 10px 0px 10px 0px;
     font-size: 22px;
   }
-  &:hover {
-    background: #1f1f1fee;
-    animation: deploy 1.5s ease-in forwards;
-    h1 {
-      display: none;
-    }
-    .inside {
-      display: block;
-      .soin {
-        margin-left: 29px;
-        opacity: 0;
-        animation: btnanim 2s ease-in forwards;
-        animation-delay: 0.3s;
-        background: #1f1f1f;
-      }
-    }
-  }
 }
 
 .inside {
@@ -193,6 +176,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0;
+    transition: opacity 2s  ease-in;
+    transition-delay: 2s;
 
     h2 {
       margin-left: 10px;
@@ -230,3 +216,17 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
  title="lotus icônes">Lotus icônes créées par Freepik - Flaticon</a>
 
 **/
+
+.get-big {
+  height: 320px;
+  h1 {
+    display: none;
+  }
+  .inside {
+    display: block;
+    margin-left: 13%;
+  }
+  .soin {
+    opacity: 1;
+  }
+}
