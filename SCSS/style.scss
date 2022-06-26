@@ -5,6 +5,7 @@
 body {
   width: 100%;
   margin: 0%;
+  height: 100%;
   background: rgb(60, 60, 60);
   background: linear-gradient(
     52deg,
@@ -16,6 +17,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  height: 200px;
 }
 
 .logo {
@@ -25,6 +27,7 @@ header {
   width: 50%;
   z-index: 2;
   opacity: 2;
+  margin-top: 15%;
   color: rgb(2, 2, 2);
   border-top: 2px solid rgb(255, 255, 255);
   img {
@@ -112,7 +115,7 @@ main {
   }
 }
 footer {
-  height: 200px;
+  height: 360px;
   display: flex;
   justify-content: center;
   p {

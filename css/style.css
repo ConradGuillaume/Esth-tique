@@ -30,6 +30,7 @@
 body {
   width: 100%;
   margin: 0%;
+  height: 100%;
   background: #3c3c3c;
   background: linear-gradient(52deg, #3c3c3c 0%, black 35%, #414141 100%);
 }
@@ -41,6 +42,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 200px;
 }
 
 .logo {
@@ -56,6 +58,7 @@ header {
   width: 50%;
   z-index: 2;
   opacity: 2;
+  margin-top: 15%;
   color: #020202;
   border-top: 2px solid white;
 }
@@ -202,7 +205,7 @@ main h3 {
 }
 
 footer {
-  height: 200px;
+  height: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
