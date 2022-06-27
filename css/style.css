@@ -55,12 +55,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  -webkit-box-shadow: 0px -1px 20px 0px white;
+          box-shadow: 0px -1px 20px 0px white;
+  width: 100%;
   z-index: 2;
   opacity: 2;
   margin-top: 15%;
   color: #020202;
-  border-top: 2px solid white;
+  border-top: 1px solid white;
+  margin-bottom: 5%;
 }
 
 .logo img {
@@ -85,12 +88,16 @@ header {
   border-bottom: 5px solid #969696;
   font-size: 35px;
   color: white;
+  text-align: center;
+  padding-bottom: 2%;
 }
 
 main {
   margin: 0%;
   background-image: url(https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_960_720.jpg);
   border-radius: 50px;
+  -webkit-box-shadow: -2px -8px 20px 11px black;
+          box-shadow: -2px -8px 20px 11px black;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
