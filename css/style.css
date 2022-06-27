@@ -27,6 +27,72 @@
   }
 }
 
+@-webkit-keyframes color {
+  from {
+    color: transparent;
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes color {
+  from {
+    color: transparent;
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes openup {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes openup {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes head {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes head {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
 body {
   width: 100%;
   margin: 0%;
@@ -43,6 +109,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 200px;
+  z-index: 0;
+  -webkit-animation: head  ease;
+          animation: head  ease;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 .logo {
@@ -393,4 +464,116 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
 .get-big .soin {
   opacity: 1;
   background: #1f1f1f;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0%;
+}
+
+.cube1 {
+  position: fixed;
+  width: 110%;
+  height: 882px;
+  background: url(https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?w=1380);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  z-index: 1;
+  -webkit-animation: openup 2s ease forwards;
+          animation: openup 2s ease forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.cube2 {
+  position: fixed;
+  right: 0%;
+  width: 100%;
+  height: 882px;
+  background: url(https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?w=1380);
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 100% 100%, 100% 0);
+  z-index: 2;
+  -webkit-animation: openup 2s ease forwards;
+          animation: openup 2s ease forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.cap {
+  font-size: 2em;
+  z-index: 5;
+  background: linear-gradient(33deg, #3c3c3c 0%, #e9e9e9 15%, whitesmoke 74%, #414141 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: color ease-in;
+          animation: color ease-in;
+  position: absolute;
+  top: 80px;
+  width: 0%;
+  margin: 0;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  text-align: center;
+  opacity: 0;
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+}
+
+.cap:nth-of-type(1) {
+  top: 5%;
+  -webkit-animation: color ease;
+          animation: color ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.cap:nth-of-type(2) {
+  top: 20%;
+  -webkit-animation: color ease;
+          animation: color ease;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+  -webkit-animation-duration: 4.9s;
+          animation-duration: 4.9s;
+}
+
+.cap:nth-of-type(3) {
+  top: 40%;
+  -webkit-animation: color ease;
+          animation: color ease;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+  -webkit-animation-duration: 4.9s;
+          animation-duration: 4.9s;
+}
+
+.cap:nth-of-type(4) {
+  top: 60%;
+  -webkit-animation: color ease;
+          animation: color ease;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+  -webkit-animation-duration: 3.9s;
+          animation-duration: 3.9s;
+}
+
+.cap:nth-of-type(5) {
+  top: 85%;
+  -webkit-animation: color ease;
+          animation: color ease;
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+  -webkit-animation-duration: 2.9s;
+          animation-duration: 2.9s;
 }

@@ -18,6 +18,9 @@ header {
   display: flex;
   justify-content: center;
   height: 200px;
+  z-index: 0;
+  animation: head  ease;
+  animation-delay: 7s;
 }
 
 .logo {
@@ -237,5 +240,87 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
   .soin {
     opacity: 1;
     background: #1f1f1f;
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+.cube1 {
+  position: fixed;
+  width: 110%;
+  height: 882px;
+  background: url(https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?w=1380);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  z-index: 1;
+  animation: openup 2s ease forwards;
+  animation-delay: 6s;
+}
+.cube2 {
+  position: fixed;
+  right: 0%;
+  width: 100%;
+  height: 882px;
+  background: url(https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?w=1380);
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  z-index: 2;
+  animation: openup 2s ease forwards;
+  animation-delay: 6s;
+}
+.cap {
+  font-size: 2em;
+  z-index: 5;
+  background: linear-gradient(
+    33deg,
+    rgba(60, 60, 60, 1) 0%,
+    rgba(233, 233, 233, 1) 15%,
+    rgba(245, 245, 245, 1) 74%,
+    rgba(65, 65, 65, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color ease-in;
+  position: absolute;
+  top: 80px;
+  width: 0%;
+  margin: 0;
+  transform: translateX(-200px);
+  text-align: center;
+  opacity: 0;
+
+  filter: brightness(2);
+  &:nth-of-type(1) {
+    top: 5%;
+    animation: color ease;
+    animation-delay: 0s;
+    animation-duration: 6s;
+  }
+  &:nth-of-type(2) {
+    top: 20%;
+    animation: color ease;
+    animation-delay: 1.1s;
+    animation-duration: 4.9s;
+  }
+  &:nth-of-type(3) {
+    top: 40%;
+    animation: color ease;
+    animation-delay: 1.1s;
+    animation-duration: 4.9s;
+  }
+  &:nth-of-type(4) {
+    top: 60%;
+    animation: color ease;
+    animation-delay: 2.1s;
+    animation-duration: 3.9s;
+  }
+  &:nth-of-type(5) {
+    top: 85%;
+    animation: color ease;
+    animation-delay: 3.1s;
+    animation-duration: 2.9s;
   }
 }

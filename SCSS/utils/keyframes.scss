@@ -9,3 +9,32 @@
   }
 }
 
+@keyframes color {
+  from {
+    color: transparent;
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    transform: translateX(0px);
+  }
+}
+@keyframes openup {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes head {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
