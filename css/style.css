@@ -110,8 +110,8 @@ header {
           justify-content: center;
   height: 200px;
   z-index: 0;
-  -webkit-animation: head  ease;
-          animation: head  ease;
+  -webkit-animation: head ease;
+          animation: head ease;
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
 }
@@ -524,6 +524,7 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
           transform: translateX(-200px);
   text-align: center;
   opacity: 0;
+  font-family: "Special Elite";
   -webkit-filter: brightness(2);
           filter: brightness(2);
 }

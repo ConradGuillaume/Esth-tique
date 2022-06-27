@@ -19,7 +19,7 @@ header {
   justify-content: center;
   height: 200px;
   z-index: 0;
-  animation: head  ease;
+  animation: head ease;
   animation-delay: 7s;
 }
 
@@ -291,6 +291,7 @@ title="bamboo icons">Bamboo icons created by Freepik - Flaticon</a>
   transform: translateX(-200px);
   text-align: center;
   opacity: 0;
+  font-family: $Fonttitle;
 
   filter: brightness(2);
   &:nth-of-type(1) {
